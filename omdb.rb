@@ -36,7 +36,8 @@ post '/result' do
     html_str += "<li><a href= /poster/#{movie[2]} >title: #{movie[1]}  <br />year: #{movie[0]}</a></li><br />"
   end
 
-  html_str << "</ul></body></html>"
+  html_str += "</ul>"
+  html_str += '<br /><a href="/">New Search</a></body></html>'
 
 end
 
